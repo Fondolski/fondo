@@ -114,7 +114,7 @@ export default function AppBody() {
             <div className='font-poppins text-white z-20 mt-20 text-lg md:text-2xl border-b' data-aos='flip-up'>Professional Skils</div>
             <div className='z-20 flex flex-wrap max-w-xl items-center justify-center mt-20'>
                 {skillDetails.map((item, i)=> {
-                    return(<div key={i} className='m-3 flex flex-col items-center w-40 justify-center' data-aos='fade-right' data-aos-duration={3000}>
+                    return(<div key={i} className='m-3 flex flex-col items-center w-40 justify-center' data-aos='fade-down' data-aos-duration={300}>
                     <CircularProgressbar value={item.value} text={`${item.value}%`}
                     
                     styles={{
@@ -161,15 +161,15 @@ export default function AppBody() {
                 
             </div>
             <div className='mt-20 flex items-center justify-center  z-30'>
-            <div className='w-11/12'>
+            <div className='w-10/12'>
                 <div className='text-white font-poppins text-lg md:text-2xl border-b' data-aos='flip-up'>Past projects</div>
                 <div className='flex flex-col items-center' >
                 {projects.map((item, i)=> {
                     return(
-                        <div key={i} className='mt-10 mr-10 flex flex-row justify-center' data-aos='fade-left'>
-                            <div className='w-40 h-40 rounded ml-3' style={{backgroundImage: 'url(' + `${item.photo}` + ')', backgroundSize: 'cover',
+                        <div key={i} className='mt-10 mr-10 flex flex-col md:flex-row justify-center' data-aos='fade-down'>
+                            <div className='w-40 h-40 rounded' style={{backgroundImage: 'url(' + `${item.photo}` + ')', backgroundSize: 'cover',
                             backgroundRepeat: 'no-repeat', overflow: 'hidden'}}></div>
-                            <div className='text-white w-48 md:w-11/12 max-w-2xl ml-3 p-5'>
+                            <div className='text-white md:ml-3 w-11/12 md:w-11/12 max-w-2xl mt-5'>
                                 <div className='font-poppins text-2xl'>{item.name}</div>
                                 <div className='mt-5 font-poppins'>{item.description}</div>
                                 <div>
@@ -182,7 +182,7 @@ export default function AppBody() {
                 </div>
             </div>
             </div>
-            <div  className='md:p-10 p-5 w-full mt-20  flex items-center justify-center   bg-black z-40'>
+            <div  className='p-5 w-full mt-20  flex items-center justify-center p-10  bg-black z-40'>
                 <div className='w-11/12 max-w-6xl flex items-center flex-wrap justify-center'>
                     <div className=' font-poppins text-white' >Email: fondolski@gmail.com</div>
                     <div className=' font-poppins text-white md:ml-5 mt-5 md:mt-0'>Phone/WhatsApp: +254714892078</div>
