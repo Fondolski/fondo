@@ -44,12 +44,12 @@ value: 100}
 
 const projects = [{
     name: 'TaliiTravel',
-    link: 'www.taliitravel.com',
+    link: 'https://www.taliitravel.com',
     description: 'Talii Travel is a tour and safari web application that makes it easy for user to find and book a tour or safari.',
     photo: 'https://firebasestorage.googleapis.com/v0/b/boozenextdoor.appspot.com/o/1smartmockups_lfi4dwy2.jpg?alt=media&token=6ab6d34b-8603-440d-9196-e798d4b9d0d0'
 },
 {name: 'We Are Next Door Website',
-link: 'www.wearenextdoor.com',
+link: 'https://www.wearenextdoor.com',
 description: 'WeAreNextDoor is a startup Kenyan tech company. We connect customers, businesses, couriers and riders, for delivery or transport.',
 photo: 'https://firebasestorage.googleapis.com/v0/b/boozenextdoor.appspot.com/o/1smartmockups_lfi4r9u8.jpg?alt=media&token=05d6b464-5633-4662-bd2a-4a1993c69acf'},
 {
@@ -173,7 +173,7 @@ export default function AppBody() {
                                 <div className='font-poppins text-2xl'>{item.name}</div>
                                 <div className='mt-5 font-poppins'>{item.description}</div>
                                 <div>
-                                    <a className='mt-5 font-poppins pb-2 border-b' href={item.link} target='_blank'>{item.link}</a>
+                                    <a className='mt-5 font-poppins pb-2 border-b' href={item.link} rel="noopener noreferrer" target='_blank'>{item.link}</a>
                                 </div>
                                 </div>
                         </div>
