@@ -11,7 +11,7 @@ const skillDetails = [ {
 value: 100},
 {
     name: 'TypeScript',
-    value: 80
+    value: 90
 },
 {
     name: 'React',
@@ -26,7 +26,17 @@ value: 80},
 {name: 'MongoDB',
 value: 100},
 {name: 'SQL',
-value: 60},
+value: 100},
+{name: 'Firebase',
+value: 100},
+{name: 'Amazon Web Services',
+value: 80},
+{name: 'Google Cloud Platform',
+value: 100},
+{name: 'Docker',
+value: 80},
+{name: 'Kubernetes',
+value: 80},
 {name: 'Problem Solving',
 value: 90},
 {name: 'Three.js',
