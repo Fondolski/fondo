@@ -11,7 +11,7 @@ const skillDetails = [ {
 value: 100},
 {
     name: 'TypeScript',
-    value: 50
+    value: 80
 },
 {
     name: 'React',
